@@ -18,6 +18,6 @@ public class PostAllGetService {
     public PostViewRequestDto seeContents(Long id) {
         Post post1 = postRepository.findById(id).orElseThrow(
                 () -> new IllegalArgumentException("해당 아이디가 존재하지 않습니다."));
-        return new PostViewRequestDto(post1.getTitle(), post1.getContents(), post1.getAuther(),post1.getCreatedAt());
+        return new PostViewRequestDto(post1.getTitle(), post1.getContents(), post1.getAuther(),post1.getCreatedAt(),post1.getModifiedAt());
     }
 }

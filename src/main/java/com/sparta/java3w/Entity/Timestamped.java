@@ -18,4 +18,7 @@ public class Timestamped {
     @CreatedDate // 생성일자임을 나타냅니다.
     private LocalDateTime createdAt;
 
+    @LastModifiedDate
+    private LocalDateTime modifiedAt;
+
 }

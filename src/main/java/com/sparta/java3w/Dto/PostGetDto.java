@@ -12,10 +12,12 @@ public class PostGetDto {
     private String title;
     private String auther;
     private LocalDateTime createdAt;
+    private LocalDateTime modifiedAt;
 
-    public PostGetDto(String title, String auther, LocalDateTime createdAt) {
+    public PostGetDto(String title, String auther, LocalDateTime createdAt, LocalDateTime modifiedAt) {
         this.title = title;
         this.auther = auther;
         this.createdAt = createdAt;
+        this.modifiedAt = modifiedAt;
     }
 }

@@ -21,7 +21,7 @@ public class PostGetService {
         List<PostGetDto> GetDto = new ArrayList<>();
         for (int i = 0; i < postRepository.count(); i++) {
             Post postinfo = tours.get(i);
-            PostGetDto postGetDto = new PostGetDto(postinfo.getTitle(), postinfo.getAuther(), postinfo.getCreatedAt());
+            PostGetDto postGetDto = new PostGetDto(postinfo.getTitle(), postinfo.getAuther(), postinfo.getCreatedAt(),postinfo.getModifiedAt());
             GetDto.add(postGetDto);
         }
         return GetDto;

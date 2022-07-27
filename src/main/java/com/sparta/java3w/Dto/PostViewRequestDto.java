@@ -13,12 +13,13 @@ public class PostViewRequestDto {
     private String contents;
     private String auther;
     private LocalDateTime createdAt;
+    private LocalDateTime modifiedAt;
 
-    public PostViewRequestDto(String title, String contents, String auther, LocalDateTime createdAt) {
+    public PostViewRequestDto(String title, String contents, String auther, LocalDateTime createdAt, LocalDateTime modifiedAt) {
         this.title = title;
         this.contents = contents;
         this.auther = auther;
         this.createdAt = createdAt;
+        this.modifiedAt = modifiedAt;
     }
-
 }
